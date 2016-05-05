@@ -1,0 +1,8 @@
+---
+applications:
+- name: prime-factors
+  memory: 128M
+  env:
+    APP_ENV: uat
+  instances: 1
+  command: PORT=3000 node ./bin/www
