@@ -3,3 +3,12 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  p
+    form(action='/', method='POST', name='prime_factors')
+      div
+        label(for='numberToFactor') Number To Factor:
+        input(type='text' name='numberToFactor')
+      div
+        input(type='submit' value='Find Factors')
+    div
+      | Prime Factors are #{factors}

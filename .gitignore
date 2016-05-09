@@ -1,1 +1,3 @@
 node_modules
+ui_tests/output
+ui_tests/selenium-server-standalone*
